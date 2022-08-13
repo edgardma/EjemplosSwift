@@ -24,14 +24,22 @@ swift -version
 
 ## Ejecutar por línea de comandos y verificar si está correctamente instalado:
 swift
-
-
 ```
-
-
 
 **Fuente:**
 
 [Swift, install this programming language in Ubuntu 20.04 | Ubunlog](https://ubunlog.com/en/swift-installs-this-programming-language-in-ubuntu-20-04/)
 
 https://www.swift.org/download/
+
+## Ejecutar un archivo
+
+Para ejecutar un archivo `*.swift` se debe ejecutar:
+
+```shell
+## Sentencia:
+swift [NOMBRE_ARCHIVO]
+
+## Ejemplo:
+swift prueba.swift
+```
