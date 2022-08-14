@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug HelloSwift",
+            "program": "${workspaceFolder:HelloSwift}/.build/debug/HelloSwift",
+            "args": [],
+            "cwd": "${workspaceFolder:HelloSwift}",
+            "preLaunchTask": "swift: Build Debug HelloSwift"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release HelloSwift",
+            "program": "${workspaceFolder:HelloSwift}/.build/release/HelloSwift",
+            "args": [],
+            "cwd": "${workspaceFolder:HelloSwift}",
+            "preLaunchTask": "swift: Build Release HelloSwift"
+        }
+    ]
+}
