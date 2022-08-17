@@ -16,26 +16,29 @@
  * - Subiré una posible solución al ejercicio el lunes siguiente al de su publicación.
  * https://github.com/mouredev/Weekly-Challenge-2022-Kotlin/blob/main/app/src/main/java/com/mouredev/weeklychallenge2022/Challenge0.kt
  */
+class Challenge0 {
+    func fizzBuzz() {
+        var fizz: Int = 3
+        var buzz: Int = 5
+        var message: String = ""
 
-var fizz: Int = 3
-var buzz: Int = 5
-var message: String = ""
+        for i in 1...100 {
+            if i == fizz {
+                fizz += 3
+                message = "fizz"
+            }
 
-for i in 1...100 {
-    if i == fizz {
-        fizz += 3
-        message = "fizz"
+            if i == buzz {
+                buzz += 5
+                message += "buzz"
+            }
+
+            if message.isEmpty {
+                message = String(i)
+            }
+
+            print(message)
+            message = ""
+        }
     }
-
-    if i == buzz {
-        buzz += 5
-        message += "buzz"
-    }
-
-    if message.isEmpty {
-        message = String(i)
-    }
-
-    print(message)
-    message = ""
 }

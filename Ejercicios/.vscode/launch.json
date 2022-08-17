@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Ejercicios",
+            "program": "${workspaceFolder:Ejercicios}/.build/debug/Ejercicios",
+            "args": [],
+            "cwd": "${workspaceFolder:Ejercicios}",
+            "preLaunchTask": "swift: Build Debug Ejercicios"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release Ejercicios",
+            "program": "${workspaceFolder:Ejercicios}/.build/release/Ejercicios",
+            "args": [],
+            "cwd": "${workspaceFolder:Ejercicios}",
+            "preLaunchTask": "swift: Build Release Ejercicios"
+        }
+    ]
+}
